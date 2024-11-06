@@ -14,8 +14,8 @@ jobs:
         uses: SpicyPizza/create-envfile@v2.0
         with:
           file_name: .env.production
-          envkey_CONTENTFUL_SPACE_ID: ${{ secrets.GATSBY_CONTENTFUL_ACCESS_TOKEN }}
-          envkey_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.GATSBY_CONTENTFUL_SPACE_ID }}
+          envkey_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.GATSBY_CONTENTFUL_ACCESS_TOKEN }}
+          envkey_CONTENTFUL_SPACE_ID: ${{ secrets.GATSBY_CONTENTFUL_SPACE_ID }}
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
