@@ -23,6 +23,7 @@ if (!spaceId || !accessToken) {
 
 // starter config
 module.exports = {
+  pathPrefix: "/la-abejita",
   siteMetadata: {
     title: "La Abejita",
     description:
