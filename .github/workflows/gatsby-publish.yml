@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v2.0
+        with:
+          envkey_CONTENTFUL_SPACE_ID: ${{ secrets.GATSBY_CONTENTFUL_ACCESS_TOKEN }}
+          envkey_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.GATSBY_CONTENTFUL_SPACE_ID }}
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
