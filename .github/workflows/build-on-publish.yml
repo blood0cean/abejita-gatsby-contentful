@@ -1,12 +1,11 @@
-name: Gatsby Publish on Push
+name: Build on Contentful Publish Event
 
 on:
-  push:
-    branches:
-      - main
+  repository_dispatch:
+      types: [publish-event]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
