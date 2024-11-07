@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/blood0cean/abejita-gatsby-contentful#readme",
   "dependencies": {
-    "@fontsource/inter": "^4.5.1",
+    "@fontsource/inter": "^5.1.0",
     "gatsby": "^5.0.0",
     "gatsby-plugin-manifest": "^5.0.0",
     "gatsby-source-contentful": "^8.0.0",
