@@ -17,13 +17,12 @@ const { spaceId, accessToken } = contentfulConfig;
 if (!spaceId || !accessToken) {
   throw new Error(
     "Contentful spaceId and the access token need to be provided. Received: " +
-      JSON.stringify(contentfulConfig)
+      JSON.stringify(contentfulConfig),
   );
 }
 
 // starter config
 module.exports = {
-  pathPrefix: "/la-abejita",
   siteMetadata: {
     title: "La Abejita",
     description:
