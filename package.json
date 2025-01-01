@@ -40,7 +40,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "chalk": "^4.0.0",
+    "chalk": "^5.4.1",
     "contentful-import": "^9.4.65",
     "gatsby-provision-contentful": "^0.0.5",
     "husky": ">=6",
